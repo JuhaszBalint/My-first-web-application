@@ -1,5 +1,6 @@
 body {
     background-color: rgba(189, 188, 188, 0.185);
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 #viewer {
@@ -22,6 +23,10 @@ body {
     border: thin solid;
     background-color: whitesmoke;
     cursor: pointer;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
     
 }
 
@@ -29,6 +34,7 @@ body {
     width: 70px;
     height: 600px;
     background-position: center;
+    background-color: grey;
 }
 
 #forward-arrow {
@@ -40,12 +46,17 @@ body {
     width: 50px;
     background-color: whitesmoke;
     cursor: pointer;
+    -webkit-transition: background-color .3s ease-out;
+    -moz-transition: background-color .3s ease-out;
+    -o-transition: background-color .3s ease-out;
+    transition: background-color .3s ease-out;
 }
 
 #forward-arrow:hover {
     width: 70px;
     height: 600px;
     background-position: center;
+    background-color: grey;
 
 }
 
@@ -54,6 +65,10 @@ body {
     width: 900px;
     background-size: 900px 500px;
     background-repeat: no-repeat;
+    -webkit-transition: background-image .3s ease-in-out;
+    -moz-transition: background-image .3s ease-in-out;
+    -o-transition: background-image .3s ease-in-out;
+    transition: background-image .3s ease-in-out;
 }
 
 #image_info {
@@ -69,8 +84,278 @@ body {
 
 #image_title {
     color: white;
+    font-size: 34px;
+    padding: 0px;
+    margin: 0px;
 }
 
 #image_description {
-    color: white;
+    color: rgb(194, 189, 189);
+}
+
+#thumbnails {
+    width: 700px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.div0 #thumb-title0 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div0 #thumb-title0::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div0:hover #thumb-title0 {
+    visibility: visible;
+}
+
+.div1 #thumb-title1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div1 #thumb-title1::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div1:hover #thumb-title1 {
+    visibility: visible;
+}
+
+.div2 #thumb-title2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div2 #thumb-title2::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div2:hover #thumb-title2 {
+    visibility: visible;
+}
+
+.div3 #thumb-title3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div3 #thumb-title3::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div3:hover #thumb-title3 {
+    visibility: visible;
+}
+
+.div4 #thumb-title4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div4 #thumb-title4::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div4:hover #thumb-title4 {
+    visibility: visible;
+}
+
+.div5 #thumb-title5 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div5 #thumb-title5::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div5:hover #thumb-title5 {
+    visibility: visible;
+}
+
+.div6 #thumb-title6 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div6 #thumb-title6::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div6:hover #thumb-title6 {
+    visibility: visible;
+}
+
+.div7 #thumb-title7 {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    border: thin solid wheat;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 120px;
+    bottom: 100%;
+    left: 50%; 
+    margin-left: -60px;
+    position: absolute;
+    z-index: 1;
+}
+
+.div7 #thumb-title7::after {
+    content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.div7:hover #thumb-title7 {
+    visibility: visible;
 }
