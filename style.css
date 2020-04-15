@@ -24,12 +24,13 @@ body {
     cursor: pointer;
     
 }
-/*
-#back-arrow :hover {
-    width: 100px;
-    height: 300px;
+
+#back-arrow:hover {
+    width: 70px;
+    height: 600px;
+    background-position: center;
 }
-*/
+
 #forward-arrow {
     background-image: url("http://stayathome-syllabus.greenfox.academy/week03/assets/arrow.svg");
     background-repeat: no-repeat;
@@ -41,12 +42,13 @@ body {
     cursor: pointer;
 }
 
-/*#forward-arrow :hover {
-    width: 100px;
-    height: 300px;
+#forward-arrow:hover {
+    width: 70px;
+    height: 600px;
+    background-position: center;
 
 }
-*/
+
 #img-container {
     border: thin solid;
     width: 900px;
@@ -59,7 +61,7 @@ body {
     width: 900px;
     height: 150px;
     position: absolute;
-    bottom: 149px;
+    bottom: 50px;
     box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;

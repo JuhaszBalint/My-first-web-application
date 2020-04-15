@@ -11,6 +11,7 @@ let data = {
     'On average, about four million people visit Yosemite each year,[3] and most spend the majority of their time in the seven square miles (18 km2) of Yosemite Valley.'    
 ]
 };
+/*
 let img = document.getElementById('img-container');
 let title = document.getElementById('image_title');
 let description = document.getElementById('image_description');
@@ -48,5 +49,41 @@ down.onclick = function() {
         img.style.backgroundImage = 'url('+data.photo[currentPhoto]+')';
         title.textContent = data.title[currentPhoto];
         description.textContent = data.description[currentPhoto];
+    }
+}
+*/
+
+let img = document.getElementById('img-container');
+let title = document.getElementById('image_title');
+let description = document.getElementById('image_description');
+let currentPhoto = 0;
+let up = document.getElementById('forward-arrow');
+let down = document.getElementById('back-arrow');
+
+function printImage(){
+    img.style.backgroundImage = 'url('+data.photo[currentPhoto]+')';
+    title.textContent = data.title[currentPhoto];
+    description.textContent = data.description[currentPhoto];
+}
+
+printImage();
+
+up.onclick = function() {
+    if (currentPhoto === 6) {
+        currentPhoto = 0;
+        printImage();
+    } else {
+        currentPhoto++;
+        printImage();
+    }
+}
+
+down.onclick = function() {
+    if (currentPhoto === 0) {
+        currentPhoto = 6;
+        printImage();
+    } else {
+        currentPhoto--;
+        printImage();
     }
 }
